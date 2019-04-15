@@ -7,7 +7,7 @@ LDFLAGS +=
 
 all: mnist
 
-LIB_OBJS = mnist.o
+LIB_OBJS = mnist.o file.o
 
 mnist: $(LIB_OBJS)
 	${CC} ${CFLAGS} ${LDFLAGS} ${LIB_OBJS} -o mnist 
